@@ -1,6 +1,6 @@
 from googleapiclient.discovery import build
 
-api_key = "AIzaSyC9hoonEPFgrOyOcZOH3i8iDRw2AeTJ4m0"
+api_key = "{YOUR_API_KEY}"
 
 youtube = build("youtube", "v3", developerKey=api_key)
 nextPageToken = None
@@ -13,7 +13,7 @@ nextPageToken = None
 # print(ch_response['items'][0]['snippet']['title'])
 pl_request = youtube.playlistItems().list(
     part="contentDetails", 
-    playlistId="PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU",
+    playlistId="{PLAY_LIST_ID}",
     maxResults=50,
     pageToken = nextPageToken
     )

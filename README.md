@@ -1,6 +1,6 @@
 # Youtube-api
 Python scripts working on youtube api.  
-Youtube api works with `google-api-pyhton-client`.
+Youtube api works with `google-api-python-client`.
 
 
 ## yt_playlist_duration
